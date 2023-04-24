@@ -1,0 +1,16 @@
+img{
+  width: 110%;
+  height: 110%;
+}
+
+.center{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  place-items: center;
+  top: 40px;
+  font-size: 40px;
+  font-family: arial;
+}

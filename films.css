@@ -1,0 +1,242 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body, html{
+    font-family: arial;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(85, 85, 85, 0.9),rgba(48, 48, 48, 0.9));
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.nav1{
+  background: rgb(92, 167, 190);
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  z-index: 9999; 
+}
+
+.icon{
+    position: absolute;
+    left: 280px;
+    height: 75px;
+    width: 120px;
+}
+
+label.title{
+    color: rgb(19, 100, 124);
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+.nav1 ul{
+    float: right;
+    margin-right: 50px;
+}
+
+.nav1 ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+.nav1 ul li a{
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+
+.TV, .other_buttons:hover{
+    background: rgb(23, 106, 131);
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: rgb(235, 235, 235);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media (max-width: 952px){
+    label.title{
+        font-size: 30px;
+        padding-left: 40px;
+    }
+    .nav1 ul li a{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 363px){
+    label.title{
+        font-size: 20px;
+        padding-left: 20px;
+    }
+
+    .nav1 ul li a{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 294px){
+    label.title{
+        font-size: 16px;
+        padding-left: 20px;
+    }
+
+    .nav1 ul li a{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 274px){
+    label.title{
+        font-size: 16px;
+        padding-left: 15px;
+    }
+
+    .nav1 ul li a{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 952px){
+    img.icon{
+        position: absolute;
+        left: 180px;
+    }
+}
+
+@media (max-width: 500px){
+    img.icon{
+        position: absolute;
+        left: 170px;
+    }
+}
+
+@media (max-width: 363px){
+    img.icon{
+        position: absolute;
+        left: 115px;
+        width: 80px;
+    }
+}
+
+@media (max-width: 294px){
+    img.icon{
+        position: absolute;
+        left: 90px;
+        width: 80px;
+        height: 70px;
+    }
+}
+
+@media (max-width: 274px){
+    img.icon{
+        position: absolute;
+        left: 85px;
+        width: 80px;
+        height: 70px;
+    }
+}
+
+    @media (max-width: 858px){
+        .checkbtn{
+            display: block;
+        }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(22, 69, 83);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    .nav1 ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    .nav1 ul li a{
+        font-size: 20px;
+    }
+
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
+.container1{
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3{
+    width: 35px;
+    height: 5px;
+    background-color: rgb(235, 235, 235);
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1{
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3{
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+.netflix{
+  position: relative;
+  top: 130px;
+  left: 50px;
+  border-radius: 20px;
+}
+.primevideo{
+  position: relative;
+  top: 130px;
+  left: 135px;
+  border-radius: 20px;
+}
+
+@media (max-width: 907px){
+    img.primevideo{
+      position: absolute;
+      top: 380px;
+      left: 50px;
+    }
+}
+
+@media (max-width: 437px){
+    .buttons{
+      position: absolute;
+      left: -40px;
+    }
+}
